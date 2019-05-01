@@ -96,13 +96,15 @@ op_test=>operation: 取每个人的两张照片构造测试集,计算准确率
 op_read->op_avg->op_cov->op_kl->op_pca->op_W->op_ref->op_test
 ```
 
+![](README.assets/Screenshot from 2019-05-01 20-52-58.png)
+
 ## 二. 实验结果分析
 
 ### 1. 训练数据中心化样例
 
 Fig.1.2.1训练数据中心化后的图片.
 
-![](/home/kehan/Documents/pr/avgFace.jpg)
+![](README.assets/avgFace-1556715073400.jpg)
 
 这里展示其中20张训练数据中心化后的人脸样例.
 
@@ -110,7 +112,7 @@ Fig.1.2.1训练数据中心化后的图片.
 
 Fig.1.2.2 特征脸样例
 
-![特征脸](/home/kehan/Documents/pr/featureFace.jpg)
+![特征脸](README.assets/featureFace.jpg)
 
 这里展示其中20张特征脸样例. 
 
@@ -120,7 +122,7 @@ Fig.1.2.2 特征脸样例
 
 Fig.1.2.3 训练数据投影到新的特征空间后的数据分布图
 
-![](/home/kehan/Documents/pr/report.assets/refs.jpg)
+![](README.assets/refs-1556715136687.jpg)
 
 ​	训练数据投影到新的特征空间后对应的新的数据矩阵,横轴表示维度(选取的主分量的数量),纵轴代表投影后的各个分量的大小,可以看出靠前的分量占得总能量更大.
 
@@ -130,7 +132,7 @@ Fig.1.2.3 训练数据投影到新的特征空间后的数据分布图
 
 Fig.1.2.4 模型的精确度随训练数据集的数量的变化.
 
-![](/home/kehan/Documents/pr/report.assets/acc-1555498077760.jpg)
+![](README.assets/acc-1555498077760.jpg)
 
 可见,随着训练样本数的增加,模型的精确度也在上升,其中当每个人的照片至少取4张时才可以开始进行比较好的判别.
 

@@ -83,20 +83,7 @@ PCA 则是选取协方差矩阵前 k 个最大的特征值的特征向量构成 
 
 ### 3. 程序框图
 
-```flow
-op_read=>operation: 读入训练集数据，每个人的10张照片中选取8张作为训练集
-op_avg=>operation: 求均值向量avgX
-op_cov=>operation: 训练数据中心化
-op_kl=>operation: 进行K-L变换,求出特征矩阵与所有特征值
-op_pca=>operation: 进行主成分分析,选取构成能量95%的特征值
-op_W=>operation: 得到变换矩阵W,计算出特征脸
-op_ref=>operation: 将训练数据投影到该新的特征空间中
-op_test=>operation: 取每个人的两张照片构造测试集,计算准确率
-
-op_read->op_avg->op_cov->op_kl->op_pca->op_W->op_ref->op_test
-```
-
-![](README.assets/Screenshot from 2019-05-01 20-52-58.png)
+![](README.assets/flows.png)
 
 ## 二. 实验结果分析
 

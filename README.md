@@ -1,3 +1,7 @@
+由于 Github 的 markdown 不支持 LaTeX 公式和流程图, README.md的公式格式化出来都是乱的. 报告的PDF版已上传.
+
+[TOC]
+
 # 应用K-L变换在OCL库中进行人脸识别
 
 ## 一. 原理简述与程序框图
